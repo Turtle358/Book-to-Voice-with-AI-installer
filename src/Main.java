@@ -19,15 +19,15 @@ public class Main {
         welcomePanel.add(welcomeLabel);
 
         // Content panel
-        JPanel contentPanel = new JPanel(new GridLayout(2, 2, 10, 10));
+        JPanel contentPanel = new JPanel(new GridLayout(10, 2, 10, 10));
         contentPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         JLabel installPathLabel = new JLabel("Install Path:");
-        installPathLabel.setFont(new Font("Arial", Font.PLAIN, 18));
+        installPathLabel.setFont(new Font("Arial", Font.PLAIN, 20));
         JTextField installPathField = new JTextField("/home/" + System.getProperty("user.name") + "/Documents");
-        installPathField.setFont(new Font("Arial", Font.PLAIN, 16));
+        installPathField.setFont(new Font("Arial", Font.PLAIN, 20));
         JButton browseButton = new JButton("Browse...");
-        browseButton.setFont(new Font("Arial", Font.PLAIN, 16));
+        browseButton.setFont(new Font("Arial", Font.PLAIN, 20));
 
         contentPanel.add(installPathLabel);
         contentPanel.add(installPathField);
